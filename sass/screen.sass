@@ -1,15 +1,49 @@
 // ---------------------------------------------------------------------------
 // Imports
 
-@import normalize
-@import base
-
+@import "normalize"
+@import "base"
+@import "compass/layout/stretching"
 /* -------------------------------------------------------------------------
  Layout */
 
 body
+  //background-color: $base-color
+
+#container
   +container
   +susy-grid-background
 
+aside
+  background-color: $third-color
+  position: fixed
+  width: $column-width*3
+
+#content
+  +span-columns(9 omega, 12)
+
 h1
   +adjust-font-size-to(50px)
+  +adjust-leading-to(1.4, 50px)
+h2
+  +adjust-font-size-to(40px)
+h3
+  +adjust-font-size-to(20px)
+  +adjust-leading-to(0.7, 20px)
+
+h1,h3
+  text-align: center
+
+// Media queries
++at-breakpoint(12 50em)
+  #content
+    +span-columns(12)
+  aside
+    +span-columns(12)
+    ul li
+      display: inline
+    nav#main-nav
+      float: left
+    nav#social
+      float: right
+      margin-right: 2em

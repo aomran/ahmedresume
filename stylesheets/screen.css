@@ -517,17 +517,17 @@ table {
 }
 
 * html {
-  font-size: 112.5%;
+  font-size: 125%;
 }
 
 html {
-  font-size: 18px;
-  line-height: 1.66667em;
+  font-size: 20px;
+  line-height: 1.65em;
 }
 
 /* -------------------------------------------------------------------------
  * Layout */
-body {
+#container {
   *zoom: 1;
   max-width: 59em;
   _width: 59em;
@@ -550,13 +550,67 @@ body {
   -moz-background-clip: content-box;
   background-clip: content-box;
 }
-body:after {
+#container:after {
   content: "";
   display: table;
   clear: both;
 }
 
+aside {
+  background-color: yellow;
+  position: fixed;
+  width: 12em;
+}
+
+#content {
+  width: 74.57627%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline;
+}
+
 h1 {
-  font-size: 2.77778em;
-  line-height: 1.2em;
+  font-size: 2.5em;
+  line-height: 1.32em;
+  line-height: 0.924em;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1.65em;
+}
+
+h3 {
+  font-size: 1em;
+  line-height: 1.65em;
+  line-height: 1.155em;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+@media (max-width: 62.5em) {
+  #content {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+
+  aside {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  aside ul li {
+    display: inline;
+  }
+  aside nav#main-nav {
+    float: left;
+  }
+  aside nav#social {
+    float: right;
+    margin-right: 2em;
+  }
 }

@@ -1,5 +1,4 @@
-/* normalize.css v2.1.0 | MIT License | git.io/normalize */
-/* normalize.scss v2.1.0 | MIT/GPLv2 License | bit.ly/normalize-with-compass */
+/* normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -28,8 +27,6 @@ audio,
 canvas,
 video {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
 }
 
 /**
@@ -42,8 +39,7 @@ audio:not([controls]) {
 }
 
 /**
- * Address styling not present in IE 7/8/9.
- * Known issue: no IE 6 support.
+ * Address styling not present in IE 8/9.
  */
 [hidden] {
   display: none;
@@ -56,31 +52,14 @@ audio:not([controls]) {
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
- * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
- *    `em` units.
  */
 html {
   font-family: sans-serif;
   /* 1 */
-  font-size: 100%;
-  /* 3 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
   -ms-text-size-adjust: 100%;
   /* 2 */
-  /* Establish a vertical rhythm unit using $base-line-height. */
-  line-height: 1.5em;
-}
-
-/**
- * Address `font-family` inconsistency between `textarea` and other form
- * elements in IE 6/7.
- */
-button,
-input,
-select,
-textarea {
-  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
 
 /**
@@ -112,64 +91,12 @@ a:hover {
    Typography
    ========================================================================== */
 /**
- * Set 1 unit of vertical rhythm on the top and bottom margin.
- */
-p,
-pre {
-  margin: 1.5em 0;
-}
-
-blockquote {
-  /* Set 1 unit of vertical rhythm on the top and bottom margin. */
-  margin: 1.5em 40px;
-}
-
-/**
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
 h1 {
-  /* Set the font-size and line-height while keeping a proper vertical rhythm. */
   font-size: 2em;
-  line-height: 1.5em;
-  /* Set 1 unit of vertical rhythm on the top and bottom margins. */
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
-}
-
-h2 {
-  font-size: 1.5em;
-  line-height: 2em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-h3 {
-  font-size: 1.17em;
-  line-height: 1.28205em;
-  margin-top: 1.28205em;
-  margin-bottom: 1.28205em;
-}
-
-h4 {
-  font-size: 1em;
-  line-height: 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-}
-
-h5 {
-  font-size: 0.83em;
-  line-height: 1.80723em;
-  margin-top: 1.80723em;
-  margin-bottom: 1.80723em;
-}
-
-h6 {
-  font-size: 0.67em;
-  line-height: 2.23881em;
-  margin-top: 2.23881em;
-  margin-bottom: 2.23881em;
+  margin: 0.67em 0;
 }
 
 /**
@@ -196,10 +123,8 @@ dfn {
 
 /**
  * Address differences between Firefox and other browsers.
- * Known issue: no IE 6/7 normalization.
  */
 hr {
-  -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
@@ -221,9 +146,7 @@ kbd,
 pre,
 samp {
   font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
   font-size: 1em;
-  line-height: 1.5em;
 }
 
 /**
@@ -267,37 +190,6 @@ sub {
 }
 
 /* ==========================================================================
-   Lists
-   ========================================================================== */
-/**
- * Set 1 unit of vertical rhythm and a consistent indentation.
- */
-dl,
-menu,
-ol,
-ul {
-  margin: 1.5em 0;
-  padding: 0 0 0 40px;
-}
-
-dl {
-  padding: 0;
-}
-
-dd {
-  margin: 0 0 0 40px;
-}
-
-/**
- * Correct list images handled incorrectly in IE 7.
- */
-nav ul,
-nav ol {
-  list-style: none;
-  list-style-image: none;
-}
-
-/* ==========================================================================
    Embedded content
    ========================================================================== */
 /**
@@ -305,8 +197,6 @@ nav ol {
  */
 img {
   border: 0;
-  /* Improve image quality when scaled in IE 7. */
-  -ms-interpolation-mode: bicubic;
 }
 
 /**
@@ -330,52 +220,29 @@ figure {
    Forms
    ========================================================================== */
 /**
- * Correct margin displayed oddly in IE 6/7.
- */
-form {
-  margin: 0;
-}
-
-/**
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border-color: #c0c0c0;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
-  /* Apply borders and padding that keep the vertical rhythm. */
-  border-top-style: solid;
-  border-top-width: 0.0625em;
-  padding-top: 0.4625em;
-  border-bottom-style: solid;
-  border-bottom-width: 0.0625em;
-  padding-bottom: 0.9125em;
-  border-left-style: solid;
-  border-left-width: 0.0625em;
-  padding-left: 0.875em;
-  border-right-style: solid;
-  border-right-width: 0.0625em;
-  padding-right: 0.875em;
+  padding: 0.35em 0.625em 0.75em;
 }
 
 /**
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- * 3. Correct alignment displayed oddly in IE 6/7.
  */
 legend {
   border: 0;
   /* 1 */
   padding: 0;
   /* 2 */
-  *margin-left: -7px;
-  /* 3 */
 }
 
 /**
  * 1. Correct font family not being inherited in all browsers.
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
- * 4. Improve appearance and consistency with IE 6/7.
  */
 button,
 input,
@@ -387,10 +254,6 @@ textarea {
   /* 2 */
   margin: 0;
   /* 3 */
-  vertical-align: baseline;
-  /* 4 */
-  *vertical-align: middle;
-  /* 4 */
 }
 
 /**
@@ -419,8 +282,6 @@ select {
  * 2. Correct inability to style clickable `input` types in iOS.
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
- * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
- *    Known issue: inner spacing remains in IE 6.
  */
 button,
 html input[type="button"],
@@ -430,8 +291,6 @@ input[type="submit"] {
   /* 2 */
   cursor: pointer;
   /* 3 */
-  *overflow: visible;
-  /* 4 */
 }
 
 /**
@@ -445,21 +304,13 @@ html input[disabled] {
 /**
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
- * 3. Remove excess padding in IE 7.
- *    Known issue: excess padding remains in IE 6.
  */
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
-  *height: 13px;
-  /* 3 */
-  *width: 13px;
-  /* 3 */
 }
 
 /**
@@ -470,10 +321,10 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   /* 2 */
+  box-sizing: content-box;
 }
 
 /**
@@ -525,6 +376,41 @@ html {
   line-height: 1.65em;
 }
 
+h1 {
+  font-size: 2.5em;
+  line-height: 1.32em;
+  line-height: 0.924em;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 2.2em;
+}
+
+h3.headline {
+  font-size: 0.9em;
+  line-height: 1.83333em;
+  line-height: 0em;
+  font-weight: normal;
+  font-style: italic;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+blockquote {
+  margin: 1.65em 40px;
+}
+
+dl,
+menu,
+ol,
+ul {
+  margin: 1.65em 0;
+  padding: 0 0 0 40px;
+}
+
 /* -------------------------------------------------------------------------
  * Layout */
 #container {
@@ -568,27 +454,6 @@ aside {
   margin-right: 0;
   *margin-left: -1em;
   display: inline;
-}
-
-h1 {
-  font-size: 2.5em;
-  line-height: 1.32em;
-  line-height: 0.924em;
-}
-
-h2 {
-  font-size: 2em;
-  line-height: 1.65em;
-}
-
-h3 {
-  font-size: 1em;
-  line-height: 1.65em;
-  line-height: 1.155em;
-}
-
-h1, h3 {
-  text-align: center;
 }
 
 @media (max-width: 62.5em) {

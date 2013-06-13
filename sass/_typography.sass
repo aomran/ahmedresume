@@ -1,36 +1,44 @@
 @import compass
 
-// // Vertical Rhythm
-$base-font-size: 20px
-$base-line-height: 33px
+// Setting up Vertical Rhythm
+$base-font-size: 18px
+$base-line-height: 30px
 +establish-baseline
 
 // The font sizes for h1-h3.
 $h1-font-size: 2.5  * $base-font-size
-$h2-font-size: 1.5  * $base-font-size
+$h2-font-size: 1.0  * $base-font-size
 $h3-font-size: 0.9  * $base-font-size
+$h1-article:   1.5  * $base-font-size
 
-h1
+// The font family for h1-h6
+$header-font-family: 'Nova Square', cursive
+
+// The amount lists and blockquotes are indented.
+$indent-amount: 40px !default
+
+aside h1
   +adjust-font-size-to($h1-font-size)
-  +adjust-leading-to(1.4, $h1-font-size)
+  text-align: center
+article h1
+  +adjust-font-size-to($h1-article)
 
 h2
   +adjust-font-size-to($h2-font-size)
 
-h3.headline
+h3
   +adjust-font-size-to($h3-font-size)
-  +adjust-leading-to(0, $h3-font-size)
+h3.headline
   font-weight: normal
   font-style: italic
-
-h1,h3
   text-align: center
 
-// The default font family.
-$base-font-family: sans-serif !default
+h4
+  +adjust-leading-to(0)
 
-// The amount lists and blockquotes are indented.
-$indent-amount: 40px !default
+h1,h2,h3,h4,h5,h6
+  font-family: $header-font-family
+
 
 // Set 1 unit of vertical rhythm on the top and bottom margin.
 blockquote

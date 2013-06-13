@@ -8,24 +8,41 @@
 body
   //background-color: $base-color
 
+//setting up grid
 #container
   +container
   +susy-grid-background
 
+//left side aside layout
 aside
-  background-color: $third-color
+  background-color: $second-color
+  color: $base-color
   position: fixed
   width: $column-width*3
 
+//right side content layout
 #content
   +span-columns(9 omega, 12)
+#education, #work, #skills, #freelance
+  clear: both
+#formal-ed, #eschool-teach
+  +span-columns(4, 9)
+#online-ed, #eschool-tech
+  +span-columns(5 omega, 9)
 
+li
+  list-style-type: square
+
+article > header
+  background-color: $second-color
+  color: $third-color
 
 // Media queries
 +at-breakpoint(12 50em)
   #content
     +span-columns(12)
   aside
+    position: static
     +span-columns(12)
     ul li
       display: inline

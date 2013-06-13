@@ -368,46 +368,58 @@ table {
 }
 
 * html {
-  font-size: 125%;
+  font-size: 112.5%;
 }
 
 html {
-  font-size: 20px;
-  line-height: 1.65em;
+  font-size: 18px;
+  line-height: 1.66667em;
 }
 
-h1 {
+aside h1 {
   font-size: 2.5em;
-  line-height: 1.32em;
-  line-height: 0.924em;
-}
-
-h2 {
-  font-size: 1.5em;
-  line-height: 2.2em;
-}
-
-h3.headline {
-  font-size: 0.9em;
-  line-height: 1.83333em;
-  line-height: 0em;
-  font-weight: normal;
-  font-style: italic;
-}
-
-h1, h3 {
+  line-height: 1.33333em;
   text-align: center;
 }
 
+article h1 {
+  font-size: 1.5em;
+  line-height: 2.22222em;
+}
+
+h2 {
+  font-size: 1em;
+  line-height: 1.66667em;
+}
+
+h3 {
+  font-size: 0.9em;
+  line-height: 1.85185em;
+}
+
+h3.headline {
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+}
+
+h4 {
+  line-height: 0em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Nova Square", cursive;
+}
+
 blockquote {
-  margin: 1.65em 40px;
+  margin: 1.66667em 40px;
 }
 
 dl,
 menu,
 ol,
 ul {
-  margin: 1.65em 0;
+  margin: 1.66667em 0;
   padding: 0 0 0 40px;
 }
 
@@ -443,7 +455,8 @@ ul {
 }
 
 aside {
-  background-color: yellow;
+  background-color: #323a44;
+  color: white;
   position: fixed;
   width: 12em;
 }
@@ -456,7 +469,35 @@ aside {
   display: inline;
 }
 
-@media (max-width: 62.5em) {
+#education, #work, #skills, #freelance {
+  clear: both;
+}
+
+#formal-ed, #eschool-teach {
+  width: 43.18182%;
+  float: left;
+  margin-right: 2.27273%;
+  display: inline;
+}
+
+#online-ed, #eschool-tech {
+  width: 54.54545%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline;
+}
+
+li {
+  list-style-type: square;
+}
+
+article > header {
+  background-color: #323a44;
+  color: #ff6268;
+}
+
+@media (max-width: 56.25em) {
   #content {
     width: 100%;
     float: left;
@@ -464,6 +505,7 @@ aside {
   }
 
   aside {
+    position: static;
     width: 100%;
     float: left;
     margin-right: 1.69492%;

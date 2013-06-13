@@ -398,13 +398,12 @@ h3 {
 }
 
 h3.headline {
-  font-weight: normal;
-  font-style: italic;
   text-align: center;
 }
 
-h4 {
-  line-height: 0em;
+h4, h3.headline {
+  font-weight: normal;
+  font-style: italic;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -469,18 +468,18 @@ aside {
   display: inline;
 }
 
-#education, #work, #skills, #freelance {
+#education, #work, #skills {
   clear: both;
 }
 
-#formal-ed, #eschool-teach {
+#formal-ed {
   width: 43.18182%;
   float: left;
   margin-right: 2.27273%;
   display: inline;
 }
 
-#online-ed, #eschool-tech {
+#online-ed {
   width: 54.54545%;
   float: right;
   margin-right: 0;

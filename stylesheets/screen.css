@@ -398,16 +398,20 @@ h3 {
 }
 
 h3.headline {
-  text-align: center;
-}
-
-h4, h3.headline {
   font-weight: normal;
   font-style: italic;
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Nova Square", cursive;
+}
+
+.workplace {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 0.88889em;
+  line-height: 1.875em;
 }
 
 blockquote {

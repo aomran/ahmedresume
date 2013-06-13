@@ -1,3 +1,5 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans");
+@import url("http://fonts.googleapis.com/css?family=Nova+Square");
 /* normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -376,6 +378,14 @@ html {
   line-height: 1.66667em;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Nova Square", cursive;
+}
+
 aside h1 {
   font-size: 2.5em;
   line-height: 1.33333em;
@@ -401,10 +411,6 @@ h3.headline {
   font-weight: normal;
   font-style: italic;
   text-align: center;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Nova Square", cursive;
 }
 
 .workplace {
@@ -477,14 +483,14 @@ aside {
 }
 
 #formal-ed {
-  width: 43.18182%;
+  width: 54.54545%;
   float: left;
   margin-right: 2.27273%;
   display: inline;
 }
 
 #online-ed {
-  width: 54.54545%;
+  width: 43.18182%;
   float: right;
   margin-right: 0;
   *margin-left: -1em;

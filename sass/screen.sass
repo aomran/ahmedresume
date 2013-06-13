@@ -5,9 +5,6 @@
 /* -------------------------------------------------------------------------
  Layout */
 
-body
-  //background-color: $base-color
-
 //setting up grid
 #container
   +container
@@ -26,9 +23,9 @@ aside
 #education, #work, #skills
   clear: both
 #formal-ed
-  +span-columns(4, 9)
+  +span-columns(5, 9)
 #online-ed
-  +span-columns(5 omega, 9)
+  +span-columns(4 omega, 9)
 
 li
   list-style-type: square
@@ -39,8 +36,11 @@ article > header
 
 // Media queries
 +at-breakpoint(12 50em)
+  // the content div expands to 12 columns
   #content
     +span-columns(12)
+  
+  // the aside stretches to 12 columns on top of #content
   aside
     position: static
     +span-columns(12)

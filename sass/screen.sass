@@ -17,6 +17,9 @@ aside
   position: fixed
   width: $column-width*3
 
+  #social ul li
+    display: inline
+
 //right side content layout
 #content
   +span-columns(9 omega, 12)
@@ -26,28 +29,32 @@ aside
   +span-columns(5, 9)
 #online-ed
   +span-columns(4 omega, 9)
-
 li
   list-style-type: square
 
+// Article headers
+article h1:first-child
+  +leader(0)
 article > header
   background-color: $second-color
   color: $third-color
+
 
 // Media queries
 +at-breakpoint(12 50em)
   // the content div expands to 12 columns
   #content
     +span-columns(12)
-  
+    article h1:first-child
+      +leader(0.5)
   // the aside stretches to 12 columns on top of #content
   aside
     position: static
     +span-columns(12)
-    ul li
-      display: inline
     nav#main-nav
       float: left
+      ul li
+        display: inline
     nav#social
       float: right
       margin-right: 2em

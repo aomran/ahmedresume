@@ -395,6 +395,7 @@ aside h1 {
 article h1 {
   font-size: 1.5em;
   line-height: 2.22222em;
+  padding-left: 1em;
 }
 
 h2 {
@@ -469,6 +470,9 @@ aside {
   position: fixed;
   width: 12em;
 }
+aside #social ul li {
+  display: inline;
+}
 
 #content {
   width: 74.57627%;
@@ -501,6 +505,10 @@ li {
   list-style-type: square;
 }
 
+article h1:first-child {
+  margin-top: 0em;
+}
+
 article > header {
   background-color: #323a44;
   color: #ff6268;
@@ -512,6 +520,9 @@ article > header {
     float: left;
     margin-right: 1.69492%;
   }
+  #content article h1:first-child {
+    margin-top: 0.83333em;
+  }
 
   aside {
     position: static;
@@ -519,11 +530,11 @@ article > header {
     float: left;
     margin-right: 1.69492%;
   }
-  aside ul li {
-    display: inline;
-  }
   aside nav#main-nav {
     float: left;
+  }
+  aside nav#main-nav ul li {
+    display: inline;
   }
   aside nav#social {
     float: right;

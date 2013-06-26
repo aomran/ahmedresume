@@ -463,18 +463,18 @@ aside #main-nav ul li {
   list-style-type: none;
 }
 
+li.active a {
+  color: white;
+}
+
 a {
   color: #ff6268;
 }
 
-a:hover {
-  color: white;
+aside a, .work-tabs-header a {
+  text-decoration: none;
 }
-#content a:hover {
-  color: #323a44;
-}
-
-li.active a {
+aside a:hover, .work-tabs-header a:hover {
   color: white;
 }
 
@@ -516,6 +516,33 @@ article h1:first-child {
 article > header {
   background-color: #323a44;
   color: #ff6268;
+}
+
+#tabs {
+  border: 0.1em solid;
+  margin-bottom: 1.66667em;
+}
+#tabs ul {
+  margin-top: 0em;
+}
+#tabs li {
+  display: inline;
+}
+
+.work-tabs-header {
+  background-color: #323a44;
+}
+.work-tabs-header li {
+  padding: 1em;
+  margin: 0;
+}
+.work-tabs-header li.ui-tabs-active {
+  background-color: white;
+  border: 0.1em solid;
+  padding: 0.5em;
+}
+.work-tabs-header li.ui-tabs-active a:hover {
+  color: inherit;
 }
 
 @media (max-width: 56.25em) {

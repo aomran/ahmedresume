@@ -23,17 +23,20 @@ aside
   #main-nav ul li
     list-style-type: none
 
+// scrollspy active
+li.active a
+  color: $base-color
+
 // anchor tags
 a
   color: $third-color
-a:hover
-  color: $base-color
-  #content &
-    color: $second-color
 
-// scrollspy active style
-li.active a
-  color: $base-color
+// white anchor tag
+aside, .work-tabs-header
+  a
+    text-decoration: none
+  a:hover
+    color: $base-color
 
 //right side content layout
 #content
@@ -53,6 +56,27 @@ article h1:first-child
 article > header
   background-color: $second-color
   color: $third-color
+
+// Freelance work tabs
+#tabs
+  border: 0.1em solid
+  +trailer(1)
+  ul
+    +leader(0)
+  li
+    display: inline
+
+.work-tabs-header
+  background-color: $second-color
+  li
+    padding: 1em
+    margin: 0
+  li.ui-tabs-active
+    background-color: $base-color
+    border: 0.1em solid
+    padding: 0.5em
+    a:hover
+      color: inherit
 
 
 // Media queries

@@ -4,20 +4,29 @@ $(document).ready(function(){
 	//scroll position
 	$('body').scrollspy({ target: 'aside' });
 	
-	//Initialize tabs, show only first tab
+	//Initialize tabs
 	$tabs = $('.work-tabs-body li')
+	$tabHeader = $('.work-tabs-header li')
 	$tabs.hide();
+	
+	//Show first tab and add active style to its header
 	$tabs.first().show();
+	$tabHeader.first().addClass('active-tab-header');
+
 
 	//Tabs on-click even handler
-	$tabHeader = $('.work-tabs-header li a')
-	$tabHeader.on("click", function(e){
+	$tabHeader.on("click", "a", function(e){
 		e.preventDefault();
 		
-		//Find id of clicked tab from the href of tab-header
+		//Remove active style from current tab header
+		//Add active style to clicked tab header
+		$('.active-tab-header').removeClass();
+		$(this).closest('li').addClass('active-tab-header')
+
+		//Find clicked tab from the href attribute
 		$desiredTab = $(this).attr("href");
 
-		//Hide visible tabs, show desired tab
+		//Hide visible tabs & show desired tab
 		$tabs.hide();
 		$($desiredTab).show("clip", 1000);
 	});

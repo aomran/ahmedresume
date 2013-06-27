@@ -3,7 +3,10 @@ $(document).ready(function(){
 	//Add 'active' class to aside main nav corresponding to
 	//scroll position
 	$('body').scrollspy({ target: 'aside' });
-	
+
+	//Add smooth scrolling to aside main nav
+	$('aside #main-nav a').smoothScroll();
+
 	//Initialize tabs
 	$tabs = $('.work-tabs-body li')
 	$tabHeader = $('.work-tabs-header li')
@@ -28,7 +31,7 @@ $(document).ready(function(){
 
 		//Hide visible tabs & show desired tab
 		$tabs.hide();
-		$($desiredTab).show("clip", 1000);
+		$($desiredTab).show("slide", 1000);
 	});
 
 });

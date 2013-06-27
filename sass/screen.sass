@@ -63,21 +63,23 @@ article > header
   +trailer(1)
   ul
     +leader(0)
-  li
-    display: inline
 
 .work-tabs-header
   background-color: $second-color
   li
+    display: inline
     padding: 1em
     margin: 0
-  li.ui-tabs-active
+  li.active-tab-header
     background-color: $base-color
     border: 0.1em solid
     padding: 0.5em
     a:hover
       color: inherit
 
+.work-tabs-body
+  li
+    display: block
 
 // Media queries
 +at-breakpoint(12 50em)

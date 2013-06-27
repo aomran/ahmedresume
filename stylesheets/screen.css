@@ -525,24 +525,26 @@ article > header {
 #tabs ul {
   margin-top: 0em;
 }
-#tabs li {
-  display: inline;
-}
 
 .work-tabs-header {
   background-color: #323a44;
 }
 .work-tabs-header li {
+  display: inline;
   padding: 1em;
   margin: 0;
 }
-.work-tabs-header li.ui-tabs-active {
+.work-tabs-header li.active-tab-header {
   background-color: white;
   border: 0.1em solid;
   padding: 0.5em;
 }
-.work-tabs-header li.ui-tabs-active a:hover {
+.work-tabs-header li.active-tab-header a:hover {
   color: inherit;
+}
+
+.work-tabs-body li {
+  display: block;
 }
 
 @media (max-width: 56.25em) {

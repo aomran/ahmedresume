@@ -544,11 +544,13 @@ article > header {
   color: inherit;
 }
 
-.work-tabs-body li {
-  display: block;
+.work-tabs-body {
   text-align: center;
 }
-.work-tabs-body li p {
+.work-tabs-body > li {
+  display: block;
+}
+.work-tabs-body > li p, .work-tabs-body > li li {
   text-align: left;
 }
 

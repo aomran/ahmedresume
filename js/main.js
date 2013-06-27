@@ -8,7 +8,7 @@ $(document).ready(function(){
 	$('aside #main-nav a').smoothScroll();
 
 	//Initialize tabs
-	$tabs = $('.work-tabs-body li')
+	$tabs = $('.work-tabs-body > li')
 	$tabHeader = $('.work-tabs-header li')
 	$tabs.hide();
 	

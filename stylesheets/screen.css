@@ -545,6 +545,10 @@ article > header {
 
 .work-tabs-body li {
   display: block;
+  text-align: center;
+}
+.work-tabs-body li p {
+  text-align: left;
 }
 
 @media (max-width: 56.25em) {

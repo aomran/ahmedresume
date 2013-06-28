@@ -422,6 +422,9 @@ h3.headline {
 }
 
 blockquote {
+  font-style: italic;
+  font-size: 0.88889em;
+  line-height: 1.875em;
   margin: 1.66667em 40px;
 }
 
@@ -544,14 +547,11 @@ article > header {
   color: inherit;
 }
 
-.work-tabs-body {
+.work-tabs-body figure {
   text-align: center;
 }
 .work-tabs-body > li {
   display: block;
-}
-.work-tabs-body > li p, .work-tabs-body > li li {
-  text-align: left;
 }
 
 @media (max-width: 56.25em) {

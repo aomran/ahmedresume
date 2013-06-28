@@ -453,6 +453,10 @@ ul {
   clear: both;
 }
 
+img {
+  max-width: 100%;
+}
+
 aside {
   background-color: #323a44;
   color: white;
@@ -600,8 +604,8 @@ article > header {
 .work-tabs-body figure {
   text-align: center;
 }
-.work-tabs-body > li {
-  display: block;
+.work-tabs-body div {
+  padding: 1em;
 }
 
 @media (max-width: 56.25em) {

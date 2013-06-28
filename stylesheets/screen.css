@@ -459,11 +459,61 @@ aside {
   position: fixed;
   width: 12em;
 }
+aside #social {
+  text-align: center;
+}
+aside #social ul {
+  padding: 0;
+  margin: 0;
+}
 aside #social ul li {
   display: inline;
 }
 aside #main-nav ul li {
   list-style-type: none;
+}
+
+.linkedin, .twitter, .github {
+  display: inline-block;
+}
+.linkedin:hover, .twitter:hover, .github:hover {
+  background-color: inherit;
+}
+
+.linkedin {
+  background-color: #007fb1;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../img/linkedin-32.png?1372378884');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.twitter {
+  background-color: #00aced;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../img/twitter-32.png?1372378902');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.github {
+  background-color: #4183c4;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../img/github-32.png?1372378914');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 32px;
+  height: 32px;
 }
 
 li.active a {

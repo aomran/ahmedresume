@@ -17,11 +17,33 @@ aside
   position: fixed
   width: $column-width*3
 
-  #social ul li
-    display: inline
-
+  #social
+    text-align: center
+    ul
+      padding: 0
+      margin: 0
+      li
+        display: inline
+  
   #main-nav ul li
     list-style-type: none
+
+//social media links
+.linkedin, .twitter, .github
+  display: inline-block
+  &:hover
+    background-color: inherit
+
+.linkedin
+  background-color: #007FB1
+  +replace-text-with-dimensions("linkedin-32.png")
+.twitter
+  background-color: #00ACED
+  +replace-text-with-dimensions("twitter-32.png")
+.github
+  background-color: #4183C4
+  +replace-text-with-dimensions("github-32.png")
+    
 
 // scrollspy active
 li.active a

@@ -1,6 +1,6 @@
-## Resume for HackerYou Assignment
+## Resume for the HackerYou assignment
 
-This resume was a fun little project to practice HTML, CSS, and Javascript. I wanted to learn new things so I took every opportunity to use as much of the great web development tools that are available.
+This resume was a fun little project to practice HTML, CSS, and Javascript. I wanted to learn new things so I took every opportunity to use as much of the web development tools that are available.
 
 ## Bundler
 The ruby gems are managed with bundler. There are asset gems and guard gems. Just bundle install and the environment is good to go.
@@ -37,9 +37,9 @@ The js/vendor directory has some Javascript libraries that I used, including:
 js/main.js has the Javascript that I wrote.
 
 ## Still to do
-- [] Add a profile photo
-- [] Fix ~600px breakpoint - that is when the freelance work block starts to degrade
-- [] Fix ~400px breakpoint - that is when the header starts to degrade
+- Add a profile photo
+- Fix ~600px breakpoint - that is when the freelance work block starts to degrade
+- Fix ~400px breakpoint - that is when the header starts to degrade
 - Cleanup the HTML (add better indentation)
 - Concat. and minify the javascript files
 - Minify the CSS file
